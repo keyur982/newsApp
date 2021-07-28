@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:padding="5dp"
+            android:textColor="#0000FF"
+            android:textSize="15sp"
+            app:drawableLeftCompat="@drawable/clock" />
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+            android:paddingVertical="10dp">
+
+            <ImageButton
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:scaleType="fitCenter"
+                android:src="@drawable/heart" />
+
+            <ImageButton
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:background="@color/white"
+                android:scaleType="fitCenter"
+                android:src="@drawable/comment" />
+
+            <ImageButton
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bookmark" />
+            <!--<TextView
+                android:id="@+id/news_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="0.4"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_readMore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Read More"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="10dp" />
+            <!-- <TextView
+                 android:id="@+id/news_author"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Author"/>-->
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
