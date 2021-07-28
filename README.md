@@ -4,6 +4,6 @@
 
 
 
-APK file located at: https://github.com/keyur982/E-Healthcare/blob/main/app/build/NewsApp.apk
+APK file located at: https://github.com/keyur982/newsApp/blob/main/app/build/NewsApp.apk
 
 
